@@ -39,7 +39,7 @@ const CONFIG = {
     // - Use a mix of letters, numbers, and hyphens for security
     //
     
-    API_KEY: 'your-secret-api-key-12345',  // ← CHANGE THIS!
+    API_KEY: 'your-secret-api-key-12345',
 
     // ============================================================
     // 3. OPTIONAL: HTTP BASIC AUTH (if using instead of API_KEY)
