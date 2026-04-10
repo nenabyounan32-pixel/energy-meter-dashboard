@@ -635,37 +635,11 @@
     </div>
 
     <script>
-        // ============================================================
-        // Configuration
-        // ============================================================
-        
-        // You MUST create a config.js file with this content:
-        // const CONFIG = {
-        //   ESP_URL: 'https://your-esp-address.com',
-        //   API_KEY: 'your-secret-api-key-12345',
-        //   BASIC_AUTH: { username: 'admin', password: 'admin123' }
-        // };
-
-        // If config.js is not found, use defaults (won't work remotely!)
-        const DEFAULT_CONFIG = {
-            ESP_URL: 'http://192.168.1.100',
-            API_KEY: 'your-secret-api-key-12345',
-            BASIC_AUTH: null
-        };
-
-        let CONFIG = DEFAULT_CONFIG;
-
-        // Try to load config.js
-        let configScript = document.createElement('script');
-        configScript.src = 'config.js';
-        configScript.onerror = function() {
-            console.warn('config.js not found. Using default config. Update config.js with your ESP address!');
-        };
-        document.head.appendChild(configScript);
-
-        // ============================================================
-        // Global Variables
-        // ============================================================
+        // Load config from config.js
+        // config.js MUST define: const CONFIG = { ESP_URL: '...', API_KEY: '...' }
+    </script>
+    <script src="config.js"></script>
+    <script>
         let analyticsChart = null;
         let isConnected = false;
 
