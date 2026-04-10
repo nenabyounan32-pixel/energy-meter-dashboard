@@ -25,7 +25,14 @@ const CONFIG = {
     // ESP_URL: 'http://192.168.1.100'
     //
     
-    ESP_URL: 'http://10.38.247.172',  // ← CHANGE THIS TO YOUR ESP ADDRESS!
+    // For LOCAL TESTING (same WiFi only):
+    // ESP_URL: 'http://10.38.247.172'
+    //
+    // For REMOTE TESTING (requires port forwarding in router):
+    // ESP_URL: 'http://130.193.193.227:8080'
+    //
+    
+    ESP_URL: 'http://10.38.247.172',  // ← LOCAL: Use this when on same WiFi
 
     // ============================================================
     // 2. CHANGE THIS TO YOUR API KEY
@@ -39,7 +46,7 @@ const CONFIG = {
     // - Use a mix of letters, numbers, and hyphens for security
     //
     
-    API_KEY: 'your-secret-api-key-12345',
+    API_KEY: 'your-secret-api-key-12345',  // ← CHANGE THIS!
 
     // ============================================================
     // 3. OPTIONAL: HTTP BASIC AUTH (if using instead of API_KEY)
